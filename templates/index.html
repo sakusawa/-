@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidemy成果物：野菜と果物識別アプリ</title>
+    <link rel="stylesheet" href="./static/v_f.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">識別しまっせぇ</h1>
+    </header>
+
+
+    <div class="main">
+        <h2>AIが画像の識別をしますぜッ！</h2>
+        <p>みなさん！<br><span class="emphasis">やさい</span>　と　<span class="emphasis">くだもの</span>　食べてますか？<br>きになる<span class="emphasis">やさいたち</span>の画像を送信してください</p>
+        <P>ただしこのAIはまだまだ勉強中なので以下のやさいたちしか識別できません<br>
+            [りんご,バナナ,赤かぶ,ピーマン,キャベツ,にんじん,カリフラワー,とうがらし,
+            とうもろこし,<br>きゅうり,なす,にんにく,しょうが,ぶどう,青とうがらし,キウイ,
+            レモン,レタス,マンゴー,玉ねぎ,<br>オレンジ,パプリカ,なし,えんどう豆,パイナップル,
+            ザクロ,じゃがいも,ラディッシュ,大豆,ほうれん草,<br>スイートコーン,さつまいも,とまと,かぶ,すいか]</P>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="おす" type="submit">
+        </form>
+        <div class="answer">{{answer}}</div>
+        	
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+    </div>
+
+    <footer>
+        <small>&copy; 2024 T.Yamashita.</small>
+    </footer>
+
+</body>
+
+</html>
