@@ -27,8 +27,9 @@ python-dotenv
 requests
 scipy
 six
-tensorboard
-tensorflow-cpu
+tensorboard==2.15.0
+tensorboard-data-server==0.7.1
+tensorflow==2.15.0
 termcolor
 urllib3
 Werkzeug
