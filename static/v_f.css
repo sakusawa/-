@@ -6,7 +6,6 @@ body {
   }
   
 header {
-  color: #e87a3f;
   padding: 0.5rem;
   text-align: center;
   background-image: url("./images/dot.sample.png"); 
@@ -18,16 +17,20 @@ header {
 }
 
 .header-title {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 
-.so, .sa { /* 「そ」と「さ」のクラスをまとめて指定 */
+.so, .sa {
   color: #7acca3; 
 }
 
-.ku, .e { /* 「ク」と「エ」のクラスをまとめて指定 */
+.ku, .e {
   color: #cca37a; 
+}
+
+.star { 
+  color: #f5e147; 
 }
 
 .main {
