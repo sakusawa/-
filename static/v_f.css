@@ -17,7 +17,7 @@ header {
 }
 
 .header-title {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: bold;
 }
 
@@ -51,6 +51,7 @@ header {
   margin-bottom: 1.5rem;
   border-bottom: none; 
   position: relative; 
+  font-size: 2rem;
 }
 
 .main h2::after {
