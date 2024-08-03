@@ -22,6 +22,14 @@ header {
   font-weight: bold;
 }
 
+.so, .sa { /* 「そ」と「さ」のクラスをまとめて指定 */
+  color: #7acca3; 
+}
+
+.ku, .e { /* 「ク」と「エ」のクラスをまとめて指定 */
+  color: #cca37a; 
+}
+
 .main {
   max-width: 1300px; 
   height: 600px;
